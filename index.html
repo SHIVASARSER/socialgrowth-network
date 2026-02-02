@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow Your Instagram</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Grow Your Instagram</h1>
+            <p>Grow Your Instagram on Our Big Network</p>
+            <a href="#packages" class="cta-button">Get Started</a>
+            <a href="https://wa.me/0000000000?text=Hi%2C%20I%20want%20to%20order%20an%20Instagram%20promotion%20package." class="whatsapp-button" target="_blank">
+                <i class="fab fa-whatsapp"></i> Order via WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Boost Your Instagram Followers Instantly</h2>
+            <p>Join thousands of users who have grown their accounts with our proven promotion services.</p>
+            <a href="#packages" class="cta-button">View Packages</a>
+        </div>
+    </section>
+
+    <section id="packages">
+        <div class="container">
+            <h2>Choose Your Package</h2>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <h3>$25</h3>
+                    <p>1 Post + 3 Stories</p>
+                    <p>1,000 Followers Guaranteed</p>
+                    <button class="buy-now" data-package="1">Buy Now</button>
+                </div>
+                <div class="package-card">
+                    <h3>$50</h3>
+                    <p>2 Posts + 4 Stories + Highlight</p>
+                    <p>3,000 Followers Guaranteed</p>
+                    <button class="buy-now" data-package="2">Buy Now</button>
+                </div>
+                <div class="package-card">
+                    <h3>$70</h3>
+                    <p>2 Posts + Story + Highlight + Swipe Up Link + Star of the Week</p>
+                    <p>5,000 Followers Guaranteed</p>
+                    <button class="buy-now" data-package="3">Buy Now</button>
+                </div>
+                <div class="package-card">
+                    <h3>$111</h3>
+                    <p>3 Posts + 3 Stories + Highlight + Link in Bio + Website Link + Swipe Links + Star of the Week</p>
+                    <p>7,000 Followers Guaranteed</p>
+                    <button class="buy-now" data-package="4">Buy Now</button>
+                </div>
+                <div class="package-card">
+                    <h3>$161</h3>
+                    <p>8 Posts + 8 Stories + Highlight + Link in Bio + Website Link + Swipe Links + Star of the Week</p>
+                    <p>15,000 Followers Guaranteed</p>
+                    <button class="buy-now" data-package="5">Buy Now</button>
+                </div>
+                <div class="package-card">
+                    <h3>$299</h3>
+                    <p>15 Posts + 15 Stories + Highlight + Link in Bio + Website Link + Swipe Links + Star of the Week</p>
+                    <p>35,000 Followers Guaranteed</p>
+                    <button class="buy-now" data-package="6">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Place Your Order</h2>
+            <form id="order-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="username">Instagram Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="package">Package:</label>
+                <select id="package" name="package" required>
+                    <option value="1">$25 — 1 Post + 3 Stories — 1,000 Followers</option>
+                    <option value="2">$50 — 2 Posts + 4 Stories + Highlight — 3,000 Followers</option>
+                    <option value="3">$70 — 2 Posts + Story + Highlight + Swipe Up Link + Star of the Week — 5,000 Followers</option>
+                    <option value="4">$111 — 3 Posts + 3 Stories + Highlight + Link in Bio + Website Link + Swipe Links + Star of the Week — 7,000 Followers</option>
+                    <option value="5">$161 — 8 Posts + 8 Stories + Highlight + Link in Bio + Website Link + Swipe Links + Star of the Week — 15,000 Followers</option>
+                    <option value="6">$299 — 15 Posts + 15 Stories + Highlight + Link in Bio + Website Link + Swipe Links + Star of the Week — 35,000 Followers</option>
+                </select>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <a href="https://instagram.com/placeholder" target="_blank" class="instagram-link">
+                <i class="fab fa-instagram"></i> Follow Us on Instagram
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+  </html>
