@@ -1,36 +1,18 @@
-// Modal functionality
-const modal = document.getElementById('order-modal');
-const closeBtn = document.getElementsByClassName('close')[0];
+// WhatsApp auto message for Buy Now buttons
 const buyNowButtons = document.querySelectorAll('.buy-now');
-const orderForm = document.getElementById('order-form');
+const phoneNumber = "8949399978"; // WhatsApp number
 
-// Open modal on Buy Now click
 buyNowButtons.forEach(button => {
     button.addEventListener('click', () => {
-        const packageValue = button.getAttribute('data-package');
-        document.getElementById('package').value = packageValue;
-        modal.style.display = 'block';
+        // Get package details from data attribute
+        const packageDetails = button.getAttribute('data-price');
+
+        // Prepare WhatsApp message
+        const message = `Hi, I want to order this Instagram promotion package: ${packageDetails}`;
+        const encodedMessage = encodeURIComponent(message);
+
+        // Open WhatsApp in new tab
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+        window.open(whatsappURL, "_blank");
     });
-});
-
-// Close modal
-closeBtn.addEventListener('click', () => {
-    modal.style.display = 'none';
-});
-
-// Close modal on outside click
-window.addEventListener('click', (event) => {
-    if (event.target === modal) {
-        modal.style.display = 'none';
-    }
-});
-
-// Form submission
-orderForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const formData = new FormData(orderForm);
-    const data = Object.fromEntries(formData);
-    alert(`Order submitted!\nName: ${data.name}\nUsername: ${data.username}\nPackage: ${data.package}\nEmail: ${data.email}`);
-    modal.style.display = 'none';
-    orderForm.reset();
 });
