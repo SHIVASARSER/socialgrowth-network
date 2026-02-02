@@ -1,6 +1,6 @@
 // WhatsApp auto message for Buy Now buttons
 const buyNowButtons = document.querySelectorAll('.buy-now');
-const phoneNumber = "8949399978"; // WhatsApp number
+const phoneNumber = "+918949399978"; // WhatsApp number
 
 buyNowButtons.forEach(button => {
     button.addEventListener('click', () => {
